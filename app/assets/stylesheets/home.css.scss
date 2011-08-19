@@ -11,8 +11,13 @@ div#container {
   position: absolute;
 }
 
-div#container p {
+div#container>div {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  font-size: 2em;
+}
+
+div#how-much {
+  margin-bottom: 20px;
 }
