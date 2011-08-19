@@ -19,6 +19,7 @@ div#container>div {
 }
 
 div#how-much {
+  margin-top: 100px;
   margin-bottom: 30px;
 }
 
@@ -28,7 +29,23 @@ div#quip {
   font-size: 0.5em;
 }
 
+div#oh-you-like-that {
+  position: relative;
+  left: 12px;
+}
+
 div#blargh {
   margin-top: 20px;
-  font-size: 0.3em;
+  font-size: 0.4em;
+}
+
+#___plusone_0 {
+  position: relative;
+  top: 5px;
+}
+
+.twitter-count-horizontal {
+  position: relative;
+  top: 5px;
+  left: 6px;
 }
