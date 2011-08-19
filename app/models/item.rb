@@ -3,4 +3,6 @@ class Item
   field :name, :type => String
   
   embeds_many :prices
+
+  validates_presence_of :name
 end
