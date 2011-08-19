@@ -1,0 +1,22 @@
+development:
+  host: localhost
+  database: onehowmuch_development
+
+test:
+  host: localhost
+  database: onehowmuch_test
+
+# set these environment variables on your prod server
+production:
+  uri: <%= ENV['MONGOLAB_URI'] %>
+  # mongodb://heroku_app792993:9bgg7mfnqupbnkvukh8q9cb31v@dbh35.mongolab.com:27357/heroku_app792993
+  #host: <%= ENV['MONGOID_HOST'] %>
+  #port: <%= ENV['MONGOID_PORT'] %>
+  #username: <%= ENV['MONGOID_USERNAME'] %>
+  #password: <%= ENV['MONGOID_PASSWORD'] %>
+  #database: <%= ENV['MONGOID_DATABASE'] %>
+  # slaves:
+  #   - host: slave1.local
+  #     port: 27018
+  #   - host: slave2.local
+  #     port: 27019

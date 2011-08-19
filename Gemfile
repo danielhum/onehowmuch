@@ -6,6 +6,7 @@ gem 'rails', '3.1.0.rc6'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'mongoid'
+gem 'bson_ext'
 gem 'thin'
 gem 'heroku'
 
