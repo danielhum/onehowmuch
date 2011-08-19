@@ -1,5 +1,7 @@
 Onehowmuch::Application.routes.draw do
 
+  get "home/index"
+
   constraints(:host => "www.onehowmuch.com") do
     # Won't match root path without brackets around "*x". (using Rails 3.0.3)
     match "(*x)" => redirect { |params, request|

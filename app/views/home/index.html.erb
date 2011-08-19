@@ -1,0 +1,1 @@
+One<b><%= @item.name.gsub!(' ', '') %></b>Costs<b><%= number_to_currency @price.value.to_f / 100 %></b>At<b><%= @price.location %></b>
