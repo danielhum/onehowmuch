@@ -10,6 +10,16 @@
       <b><%= number_to_currency @price.value.to_f / 100 %></b>
       At
       <b><%= @price.location %></b>
+      <br/>
+      <div id="quip">
+        <% if @cheapest %>
+          and as far as we know, that's the cheapest.
+        <% elsif @expensive %>
+          and as far as we know, that's crazy expensive.
+        <% else %>
+          and if we are not wrong, you can get it for cheaper.<br/>or more expensive, if that's your thing.
+        <% end %>
+      </div>
     </div>
     <br/>
     <div id="oh-you-like-that">
