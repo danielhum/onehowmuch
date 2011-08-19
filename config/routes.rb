@@ -1,9 +1,4 @@
 Onehowmuch::Application.routes.draw do
-  get "prices/create"
-
-  get "prices/edit"
-
-  get "prices/destroy"
 
   constraints(:host => "www.onehowmuch.com") do
     # Won't match root path without brackets around "*x". (using Rails 3.0.3)
