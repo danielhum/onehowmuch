@@ -8,7 +8,7 @@ Onehowmuch::Application.routes.draw do
   end
 
   resources :items do
-    resources :price
+    resources :prices
   end
 
   root :to => 'items#index'

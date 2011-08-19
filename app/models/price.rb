@@ -1,6 +1,6 @@
 class Price
   include Mongoid::Document
-  field :value, :type => Integer
+  field :value, :type => Integer # in cents
   field :location
 
   embedded_in :item

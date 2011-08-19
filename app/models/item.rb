@@ -5,4 +5,5 @@ class Item
   embeds_many :prices
 
   validates_presence_of :name
+  key :name
 end

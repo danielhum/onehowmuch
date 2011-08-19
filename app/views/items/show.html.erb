@@ -5,6 +5,20 @@
   <%= @item.name %>
 </p>
 
+<% if @item.prices.size > 0 %>  
+  <h2>Prices</h2>  
+  <% for price in @item.prices %>  
+    <p><b><%= number_to_currency price.value.to_f / 100 %></b> - <%= price.location %></p>  
+  <% end %>  
+<% end %>  
+  
+<h2>New Price</h2>  
+  
+<%= form_for [@item, Price.new] do |f| %>  
+  <p><%= f.label :value %>(in cents) <%= f.text_field :value %></p>  
+  <p><%= f.label :location %> <%= f.text_field :location %></p>  
+  <p><%= f.submit %></p>  
+<% end %> 
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
