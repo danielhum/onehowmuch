@@ -1,7 +1,5 @@
 Onehowmuch::Application.routes.draw do
 
-  get "home/index"
-
   constraints(:host => "www.onehowmuch.com") do
     # Won't match root path without brackets around "*x". (using Rails 3.0.3)
     match "(*x)" => redirect { |params, request|
@@ -13,7 +11,7 @@ Onehowmuch::Application.routes.draw do
     resources :prices
   end
 
-  root :to => 'items#index'
+  root :to => 'home#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
