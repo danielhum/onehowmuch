@@ -1,4 +1,10 @@
 Onehowmuch::Application.routes.draw do
+  get "prices/create"
+
+  get "prices/edit"
+
+  get "prices/destroy"
+
   constraints(:host => "www.onehowmuch.com") do
     # Won't match root path without brackets around "*x". (using Rails 3.0.3)
     match "(*x)" => redirect { |params, request|
@@ -6,7 +12,9 @@ Onehowmuch::Application.routes.draw do
     }
   end
 
-  resources :items
+  resources :items do
+    resources :price
+  end
 
   root :to => 'items#index'
 
