@@ -1,14 +1,14 @@
 <% content_for :title do %>
-  One <%= @item.name %> Costs <%= number_to_currency @price.value.to_f / 100 %> At <%= @price.location %>
+  <%= @title %>
 <% end %>
 <div id="container">
   <div>
     <div id="how-much">
       One
       <b><%= @item.name %></b>
-      Costs
-      <b><%= number_to_currency @price.value.to_f / 100 %></b>
-      At
+      costs
+      <b><%= @price_value %></b>
+      at
       <b><%= @price.location %></b>
       <br/>
       <div id="quip">
@@ -24,7 +24,7 @@
     <br/>
     <div id="oh-you-like-that">
       <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=200927713302976&amp;xfbml=1"></script><fb:like href="" send="true" layout="button_count" show_faces="false" action="like" font="verdana"></fb:like>
-      <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-text="<%= @title %> #onehowmuch" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       <g:plusone size="medium"></g:plusone>
       <script type="text/javascript">
         (function() {
