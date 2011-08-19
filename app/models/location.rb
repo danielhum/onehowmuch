@@ -3,4 +3,6 @@ class Location
   field :name, :type => String
 
   embedded_in :price
+
+  validate :name, :presence => true
 end
