@@ -33,7 +33,9 @@ div#oh-you-like-that {
 }
 
 div#blargh {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
   font-size: 0.4em;
 }
 
