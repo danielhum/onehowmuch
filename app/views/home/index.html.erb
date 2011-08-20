@@ -1,6 +1,14 @@
 <% content_for :title do %>
   <%= @title %>
 <% end %>
+<% content_for :head do %>
+  <meta property="og:title" content="One How Much?" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://onehowmuch.com" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="One How Much" />
+  <meta property="fb:admins" content="13756465" />
+<% end %>
 <div id="container">
   <div>
     <div id="how-much">
@@ -36,7 +44,7 @@
     </div>
     <br/>
     <div id="blargh">
-      know how much something costs? <a href="mailto:howmuch@oneuphero.com" target="_blank">email</a> or <a href="http://twitter.com/?status=@onehowmuch" target="_blank">tweet</a>.
+      know how much something costs? <a href="mailto:howmuch@oneuphero.com" target="_blank">email</a> or <a href="http://twitter.com/?status=@onehowmuch" target="_blank">tweet</a>. also, find out <a href="http://todaydrinkwhat.com">today drink what</a>.
       <br/>
       psst.. refresh the page.
     </div>
